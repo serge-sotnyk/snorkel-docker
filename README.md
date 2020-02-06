@@ -10,5 +10,7 @@ Docker-image for working with Snorkel https://snorkel.org/
 * [Snorkel Twitter](https://twitter.com/SnorkelML)
 
 # Getting Started
-Snorkel is a stanning approach for learning with unlabbeled data. But the original library is very fragile. It has depencies to old versions of PyTorch and Tensorflow. Moreover, it has problems if you try to install it in windows (sometimes it is important). To prevent these troubles, it will be better to make labelling with docker and other work to to outside it. This docker is inspired with the [Snorkel tutorials](https://github.com/snorkel-team/snorkel-tutorials) repository.
+Snorkel is a stunning approach to learning with unlabeled data. But the original library is very fragile. It has dependencies on old versions of PyTorch and Tensorflow.
+
+Moreover, it has problems if you try to install it in windows (sometimes it is important). It will be better to make labeling with docker to prevent these troubles and other work outside. The [Snorkel tutorials](https://github.com/snorkel-team/snorkel-tutorials) repository has inspired this docker.
 
