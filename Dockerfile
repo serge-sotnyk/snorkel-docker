@@ -14,7 +14,8 @@ RUN wget -O snorkel-requirements.txt \
     https://raw.githubusercontent.com/snorkel-team/snorkel/master/requirements.txt \
     && pip3 install -r requirements.txt \
     && pip3 install -r snorkel-requirements.txt \
-    && python3 -m spacy download en_core_web_sm
+    && python3 -m spacy download en_core_web_sm \
+    && mkdir -p /app/workdir/
 
 WORKDIR /app/workdir/
 
