@@ -17,6 +17,9 @@ RUN wget -O snorkel-requirements.txt \
     && python3 -m spacy download en_core_web_sm \
     && mkdir -p /app/workdir/
 
+RUN pip3 install -r requirements-dev.txt
+RUN pip3 install -r requirements-tut.txt
+
 WORKDIR /app/workdir/
 
 ENTRYPOINT ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
