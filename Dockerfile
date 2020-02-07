@@ -12,9 +12,9 @@ WORKDIR /app
 COPY . /app
 RUN wget -O snorkel-requirements.txt \
     https://raw.githubusercontent.com/snorkel-team/snorkel/master/requirements.txt \
-    && pip3 install -r requirements.txt \
-    && pip3 install -r snorkel-requirements.txt \
-    && python3 -m spacy download en_core_web_sm \
+    && pip3 install -r requirements.txt 
+RUN pip3 install -r snorkel-requirements.txt 
+RUN python3 -m spacy download en_core_web_sm \
     && mkdir -p /app/workdir/
 
 RUN pip3 install -r requirements-dev.txt
